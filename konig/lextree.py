@@ -78,15 +78,17 @@ class Rule(object):
 
     @classmethod
     def test_eil(cls, lhs, rhs, settings):
-        if lhs.tag.is_head and settings.head_right:
-            return False
-        return lhs.type == Type.ε_t and rhs.type == Type.e_εt
+        # if lhs.tag.is_head and settings.head_right:
+        #     return False
+        # return lhs.type == Type.ε_t and rhs.type == Type.e_εt
+        return lhs.type == Type.ε_t
 
     @classmethod
     def test_eir(cls, lhs, rhs, settings):
-        if rhs.tag.is_head and settings.head_left:
-            return False
-        return lhs.type == Type.e_εt and rhs.type == Type.ε_t
+        # if rhs.tag.is_head and settings.head_left:
+        #     return False
+        # return lhs.type == Type.e_εt and rhs.type == Type.ε_t
+        return rhs.type == Type.ε_t
 
 
 class LexTree(object):

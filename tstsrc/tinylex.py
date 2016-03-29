@@ -42,7 +42,7 @@ if __name__ == '__main__':
                 konig.lextree.LexTree(['ate'], Type.e_t, phrases['VP']),
                 konig.lextree.LexTree(['ate'], Type.ett_et, heads['V'])]
     }
-    s = 'it ran past the barn'.split()
+    s = 'the horse ran past the barn'.split()
     n = len(s)
     chart = konig.decoder.decode(s, lexicon)
 

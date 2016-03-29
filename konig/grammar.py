@@ -46,10 +46,12 @@ grammar = {
     ('VP', 'PP'): 'VP',
     ('AP', 'PP'): 'NP',
     ('NP', 'PP'): 'NP',
+    ('VP', 'AdvP'): 'VP',
 
     # Terminal
     ('D', 'NP'): 'DP',
     ('D', 'AP'): 'DP',
+    ('D', 'VP'): 'S',
     ('N', 'NP'): 'NP',
     ('N', 'PP'): 'NP',
     ('P', 'DP'): 'PP',
